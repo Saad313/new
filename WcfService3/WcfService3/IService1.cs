@@ -23,6 +23,10 @@ namespace WcfService3
         [OperationContract]
         void register(string username, string password);
 
+        [OperationContract]
+        bool Login(string username, string password);
+
+
     }
 
 

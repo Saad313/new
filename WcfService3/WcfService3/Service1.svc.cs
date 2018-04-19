@@ -35,8 +35,19 @@ namespace WcfService3
             userclass u = new userclass();
             u.Username = username;
             u.Password = password;
-            DataClass.userclass.add(u);
+            DataClass.user.Add(u);
 
+        }
+        public bool Login(string username, string password)
+        {
+            foreach (userclass u in DataClass.user)
+            {
+                if (u.Username == username && u.Password == password)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
 
