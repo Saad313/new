@@ -25,7 +25,7 @@ namespace client
             server.Login(txtusername.Text, txtpassword.Text ,out valid, out isvalid);
             if (valid)
             {
-                MessageBox.Show("Welcome"); 
+                MessageBox.Show("Welcome");   
             }
             else 
             {

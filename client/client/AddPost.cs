@@ -43,6 +43,7 @@ namespace client
 
         private void lblapprovelrequest_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+
             AdminApproval adminapproval = new AdminApproval();
             this.Hide();
             adminapproval.Show();
