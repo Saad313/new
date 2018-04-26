@@ -8,3 +8,6 @@ C:\Users\Wajid Sahib\Documents\Visual Studio 2012\Projects\client\client\obj\Deb
 C:\Users\Wajid Sahib\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.csproj.GenerateResource.Cache
 C:\Users\Wajid Sahib\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.exe
 C:\Users\Wajid Sahib\Documents\Visual Studio 2012\Projects\client\client\obj\Debug\client.pdb
+C:\Users\Wajid Sahib\Documents\new\client\client\bin\Debug\client.exe.config
+C:\Users\Wajid Sahib\Documents\new\client\client\obj\Debug\client.exe
+C:\Users\Wajid Sahib\Documents\new\client\client\obj\Debug\client.pdb
