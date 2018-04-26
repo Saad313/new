@@ -11,6 +11,7 @@ namespace server
     {
         private string adminname;
 
+
         [DataMember]
         public string Adminname
         {
