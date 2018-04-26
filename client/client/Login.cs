@@ -38,6 +38,7 @@ namespace client
         {
             Register R = new Register();
             this.Hide();
+
             R.Show();
         }
 
