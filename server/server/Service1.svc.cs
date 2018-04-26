@@ -30,24 +30,100 @@ namespace server
             return composite;
         }
 
-        public void register(string username, string password)
+
+        public void registeruser(string username, string password)
         {
+
             User u = new User();
             u.Username = username;
             u.Password = password;
             DataClass.user.Add(u);
+
+
         }
 
-        public bool Login(string username,string password)
+        public void registeradmin(string username, string password)
+        {
+
+            admin a = new admin();
+            a.Adminname = username;
+            a.Adminpass = password;
+            adminDL.admin.Add(a);
+
+        }
+
+        public bool Login_user(string username, string password)
         {
             foreach (User u in DataClass.user)
             {
                 if (u.Username == username && u.Password == password)
                 {
                     return true;
+                    MyUtill.log = u;
                 }
             }
             return false;
         }
+
+        public bool isadmin(string usernmae, string password)
+        {
+            foreach (admin a in adminDL.admin)
+            {
+                if (a.Adminname == usernmae && a.Adminpass == password)
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
+
+        public void addpost(string title, string category, string description)
+        {
+            Post p = new Post();
+            p.Title = title;
+            p.Category = category;
+            p.Description = description;
+            postDL.postlist.Add(p);
+
+            p.Title = "";
+            p.Category = "";
+            p.Description = "";
+        }
+        public void postingthepost(Post p)
+        {
+            postDL pi = new postDL();
+            pi.posting(p);
+        }
+        public List<Post> getpostlist()
+        {
+            return postDL.postlist;
+        }
+
+        public Post getpost(int postID)
+        {
+            return postDL.postlist[postID];
+        }
+
+
+        //public void register(string username, string password)
+        //{
+        //    User u = new User();
+        //    u.Username = username;
+        //    u.Password = password;
+        //    DataClass.user.Add(u);
+        //}
+
+        //public bool Login(string username,string password)
+        //{
+        //    foreach (User u in DataClass.user)
+        //    {
+        //        if (u.Username == username && u.Password == password)
+        //        {
+        //            return true;
+        //        }
+        //    }
+        //    return false;
+        //}
     }
 }

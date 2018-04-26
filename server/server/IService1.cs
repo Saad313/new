@@ -12,7 +12,6 @@ namespace server
     [ServiceContract]
     public interface IService1
     {
-
         [OperationContract]
         string GetData(int value);
 
@@ -21,11 +20,43 @@ namespace server
 
 
         [OperationContract]
-        void register(string username, string password);
+        void registeruser(string username, string password);
 
         [OperationContract]
-        bool Login(string username, string password);
+        void registeradmin(string username, string password);
+
+        [OperationContract]
+        bool Login_user(string username, string password);
+
+        [OperationContract]
+        bool isadmin(string usernmae, string password);
+
+        [OperationContract]
+        Post getpost(int postID);
+
+
+        [OperationContract]
+        List<Post> getpostlist();
+
+        [OperationContract]
+        void addpost(string title, string category, string description);
         // TODO: Add your service operations here
+        [OperationContract]
+        void postingthepost(Post p);
+
+        //[OperationContract]
+        //string GetData(int value);
+
+        //[OperationContract]
+        //CompositeType GetDataUsingDataContract(CompositeType composite);
+
+
+        //[OperationContract]
+        //void register(string username, string password);
+
+        //[OperationContract]
+        //bool Login(string username, string password);
+        //// TODO: Add your service operations here
     }
 
 
