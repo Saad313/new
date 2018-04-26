@@ -3,3 +3,8 @@ c:\users\wajid sahib\documents\visual studio 2012\Projects\server\server\bin\ser
 c:\users\wajid sahib\documents\visual studio 2012\Projects\server\server\obj\Debug\server.csprojResolveAssemblyReference.cache
 c:\users\wajid sahib\documents\visual studio 2012\Projects\server\server\obj\Debug\server.dll
 c:\users\wajid sahib\documents\visual studio 2012\Projects\server\server\obj\Debug\server.pdb
+C:\Users\Wajid Sahib\Documents\new\server\server\bin\server.dll
+C:\Users\Wajid Sahib\Documents\new\server\server\bin\server.pdb
+C:\Users\Wajid Sahib\Documents\new\server\server\obj\Debug\server.csprojResolveAssemblyReference.cache
+C:\Users\Wajid Sahib\Documents\new\server\server\obj\Debug\server.dll
+C:\Users\Wajid Sahib\Documents\new\server\server\obj\Debug\server.pdb
